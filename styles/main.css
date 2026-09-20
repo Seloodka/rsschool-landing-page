@@ -1,4 +1,5 @@
 @import url(./fonts.css);
+@import url(./header.css);
 
 :root {
   /* light theme colors */
@@ -37,4 +38,26 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  padding: 20px 40px 40px;
+  overflow: hidden;
+}
+
+.page-main {
+  margin: 20px 0 100px;
 }

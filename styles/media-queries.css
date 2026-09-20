@@ -1,0 +1,57 @@
+@media only screen and (width <= 870px) {
+  .page-main {
+    margin-bottom: 95px;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .coffee-menu {
+    display: none;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+
+  .hero-wrapper {
+    padding: 100px 60px;
+  }
+
+  .hero-offer__button > svg {
+    visibility: visible;
+    margin-left: 8px;
+    width: 20px;
+    transform: scale(1);
+  }
+
+  #favorite > .section-header {
+    text-align: center;
+  }
+
+  .gallery {
+    flex-wrap: wrap;
+  }
+
+  .gallery__item_small {
+    display: none;
+  }
+
+  .app-section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .page-footer {
+    padding: 100px 60px;
+  }
+
+  .footer-offer {
+    max-width: 100%;
+  }
+
+  .footer-contacts__item {
+    gap: 2px;
+  }
+}

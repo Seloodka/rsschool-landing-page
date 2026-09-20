@@ -3,6 +3,7 @@
 @import url(./section-hero.css);
 @import url(./section-favorite.css);
 @import url(./section-about.css);
+@import url(./section-app.css);
 
 :root {
   /* light theme colors */

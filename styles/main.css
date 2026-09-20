@@ -1,5 +1,6 @@
 @import url(./fonts.css);
 @import url(./header.css);
+@import url(./hero-section.css);
 
 :root {
   /* light theme colors */
@@ -59,5 +60,8 @@ a {
 }
 
 .page-main {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 100px;
   margin: 20px 0 100px;
 }

@@ -1,0 +1,84 @@
+:root {
+  /* light theme colors */
+
+  --text-primary: rgba(45, 45, 45, 1);
+  --text-inverse: rgba(225, 212, 201, 1);
+  --text-accent: rgba(176, 144, 122, 1);
+
+  --background-page: rgba(225, 212, 201, 1);
+  --background-container: rgba(102, 95, 85, 1);
+  --background-overlay: rgba(64, 63, 61, 0.8);
+
+  --border-primary: rgba(193, 182, 173, 1);
+  --border-inverse: rgba(102, 95, 85, 1);
+
+  /* dark theme colors */
+
+  --text-primary-dark: rgba(225, 212, 201, 1);
+  --text-inverse-dark: rgba(225, 212, 201, 1);
+  --text-accent-dark: rgba(176, 144, 122, 1);
+
+  --background-page-dark: rgba(41, 40, 38, 1);
+  --background-container-dark: rgba(64, 63, 61, 1);
+  --background-overlay-dark: rgba(41, 40, 38, 0.8);
+
+  --border-primary-dark: rgba(102, 95, 85, 1);
+  --border-inverse-dark: rgba(193, 182, 173, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  padding: 20px 40px 40px;
+  overflow: hidden;
+}
+
+.page-main {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 100px;
+  margin: 20px 0 100px;
+}
+
+.section-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.section-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}

@@ -1,3 +1,31 @@
+:root {
+  /* light theme colors */
+
+  --text-primary: rgba(45, 45, 45, 1);
+  --text-inverse: rgba(225, 212, 201, 1);
+  --text-accent: rgba(176, 144, 122, 1);
+
+  --background-page: rgba(225, 212, 201, 1);
+  --background-container: rgba(102, 95, 85, 1);
+  --background-overlay: rgba(64, 63, 61, 0.8);
+
+  --border-primary: rgba(193, 182, 173, 1);
+  --border-inverse: rgba(102, 95, 85, 1);
+
+  /* dark theme colors */
+
+  --text-primary-dark: rgba(225, 212, 201, 1);
+  --text-inverse-dark: rgba(225, 212, 201, 1);
+  --text-accent-dark: rgba(176, 144, 122, 1);
+
+  --background-page-dark: rgba(41, 40, 38, 1);
+  --background-container-dark: rgba(64, 63, 61, 1);
+  --background-overlay-dark: rgba(41, 40, 38, 0.8);
+
+  --border-primary-dark: rgba(102, 95, 85, 1);
+  --border-inverse-dark: rgba(193, 182, 173, 1);
+}
+
 *,
 *::before,
 *::after {

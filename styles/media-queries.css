@@ -55,3 +55,46 @@
     gap: 2px;
   }
 }
+
+@media only screen and (width <= 450px) {
+  .page {
+    padding: 20px 16px 40px;
+  }
+
+  h1 {
+    font-size: 42px;
+    line-height: 115%;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 125%;
+  }
+
+  .hero-wrapper {
+    padding: 60px 16px;
+  }
+
+  .slider-wrapper__button-container {
+    display: none;
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  .app-section {
+    gap: 40px;
+  }
+
+  .page-footer {
+    padding: 60px 16px;
+    gap: 40px;
+  }
+
+  .app-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

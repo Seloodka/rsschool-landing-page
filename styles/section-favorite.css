@@ -6,12 +6,12 @@
   width: 100%;
 }
 
-.button-container {
+.slider-wrapper__button-container {
   max-width: 60px;
   max-height: 60px;
 }
 
-.slider__button {
+.slider-wrapper__button {
   padding: 18px;
   display: flex;
   justify-content: center;

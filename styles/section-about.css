@@ -16,7 +16,7 @@
 }
 
 .gallery__item_large {
-  max-height: 590px;
+  height: 590px;
 }
 
 .gallery__item_small {

@@ -2,6 +2,7 @@
 @import url(./header.css);
 @import url(./section-hero.css);
 @import url(./section-favorite.css);
+@import url(./section-about.css);
 
 :root {
   /* light theme colors */

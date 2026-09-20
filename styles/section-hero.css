@@ -30,8 +30,23 @@
 .hero-offer__button {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 200px;
   border-radius: 100px;
   padding: 20px 0;
+}
+
+.hero-offer__button > svg {
+  visibility: hidden;
+  margin-left: 0;
+  width: 0;
+  transform: scale(0);
+  transition: all 0.3s ease-in allow-discrete;
+}
+
+.hero-offer__button:hover > svg {
+  visibility: visible;
+  margin-left: 8px;
+  width: 20px;
+  transform: scale(1);
 }

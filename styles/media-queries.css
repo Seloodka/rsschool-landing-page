@@ -74,6 +74,18 @@
   }
 }
 
+@media only screen and (width <= 700px) {
+  .slider-wrapper__button-container {
+    display: none;
+  }
+
+  .slider {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
 @media only screen and (width <= 450px) {
   .page {
     padding: 20px 16px 40px;
@@ -92,14 +104,6 @@
 
   .hero-wrapper {
     padding: 60px 16px;
-  }
-
-  .slider-wrapper__button-container {
-    display: none;
-  }
-
-  .slider {
-    width: 100%;
   }
 
   .app-section {

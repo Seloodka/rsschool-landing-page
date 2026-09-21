@@ -213,3 +213,7 @@
     stroke: var(--text-inverse);
   }
 }
+
+.card-wrapper {
+  border-color: var(--border-primary);
+}

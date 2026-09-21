@@ -56,6 +56,10 @@
     justify-content: center;
   }
 
+  .gallery__column {
+    width: 100%;
+  }
+
   .gallery__item_small {
     display: none;
   }

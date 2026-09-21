@@ -38,10 +38,12 @@
 
 .page-wrapper {
   background-color: var(--background-page);
+  transition: background-color 0.2s ease-in;
 }
 
 .page {
   color: var(--text-primary);
+  transition: color 0.2s ease-in;
 }
 
 .theme-switch {
@@ -94,6 +96,8 @@
 .hero-offer__button {
   color: var(--text-primary);
   background-color: var(--background-page);
+  transition: background-color 0.2s ease-in;
+
   svg path {
     stroke: var(--text-primary);
   }

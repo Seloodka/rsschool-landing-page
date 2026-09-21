@@ -131,4 +131,8 @@
     padding: 60px 16px;
     gap: 40px;
   }
+
+  .menu-tabs {
+    gap: 8px;
+  }
 }

@@ -15,13 +15,23 @@
   }
 
   .theme-switch {
-    max-width: 104px;
+    min-width: 104px;
     max-height: 52px;
     padding: 5px 3px;
   }
 
   .theme-switch__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 44px;
+    max-height: 40px;
+    padding: 4px;
+  }
+
+  .theme-switch__button:nth-last-child(1) {
+    min-width: 44px;
+    max-height: 44px;
   }
 
   .coffee-menu {
@@ -54,6 +64,10 @@
   .gallery {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .gallery__column {
+    width: 100%;
   }
 
   .gallery__item_small {
@@ -126,5 +140,9 @@
   .page-footer {
     padding: 60px 16px;
     gap: 40px;
+  }
+
+  .menu-tabs {
+    gap: 8px;
   }
 }

@@ -76,7 +76,6 @@
 }
 
 .card-header {
-  width: 310px;
   min-height: 310px;
   border-radius: 40px;
   overflow: hidden;
@@ -87,7 +86,12 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-  scale: 1.1;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.card-wrapper:hover img {
+  transform: scale(1);
 }
 
 .card-content {

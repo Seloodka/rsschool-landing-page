@@ -5,13 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <base href="../">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="./styles/page-menu.css">
   <link rel="stylesheet" href="./styles/main.css">
 
-  <title>Home</title>
+  <title>Menu</title>
 </head>
 
 <body class="page-wrapper" data-theme="light">
@@ -32,19 +35,19 @@
       <nav class="header-nav">
         <ul class="header-nav__list">
           <li class="header-nav__item">
-            <a href="#favorite">Favorite coffee</a>
+            <a href="./index.html#favorite">Favorite coffee</a>
             <span class="link__line"></span>
           </li>
           <li class="header-nav__item">
-            <a href="#about">About</a>
+            <a href="./index.html#about">About</a>
             <span class="link__line"></span>
           </li>
           <li class="header-nav__item">
-            <a href="#app">Mobile app</a>
+            <a href="./index.html#app">Mobile app</a>
             <span class="link__line"></span>
           </li>
           <li class="header-nav__item">
-            <a href="#contact">Contact us</a>
+            <a href="./pages/menu.html#contact">Contact us</a>
             <span class="link__line"></span>
           </li>
         </ul>
@@ -68,7 +71,7 @@
           </button>
         </div>
 
-        <div class="coffee-menu">
+        <div class="coffee-menu coffee-menu_active">
           <a href="./pages/menu.html" class="coffee-menu__link">
             <span>Menu</span>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -101,178 +104,97 @@
     </header>
 
     <main class="page-main">
-      <section class="hero-wrapper">
-        <div class="hero-offer">
-          <h1><em class="text_accent">Enjoy</em> premium coffee at our charming cafe</h1>
-          <p>
-            With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular
-            destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.
-          </p>
-          <a href="./pages/menu.html" class="hero-offer__button text_link">
-            <span>Menu</span>
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M14.167 9.76667V11.6667C14.167 14.8883 11.5553 17.5 8.33366 17.5C5.112 17.5 2.50033 14.8883 2.50033 11.6667V9.76667C2.50033 9.4353 2.76896 9.16667 3.10033 9.16667H13.567C13.8984 9.16667 14.167 9.4353 14.167 9.76667Z"
-                stroke="#403F3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              <path
-                d="M10.0003 7.50008C10.0003 6.66675 10.5956 5.83341 11.786 5.83341C13.101 5.83341 14.167 4.76743 14.167 3.45246V2.91675"
-                stroke="#403F3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              <path
-                d="M6.66634 7.5V7.08333C6.66634 5.70262 7.78563 4.58333 9.16634 4.58333C10.0868 4.58333 10.833 3.83714 10.833 2.91667V2.5"
-                stroke="#403F3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              <path
-                d="M13.333 9.16675H15.4163C16.5669 9.16675 17.4997 10.0995 17.4997 11.2501C17.4997 12.4007 16.5669 13.3334 15.4163 13.3334H14.1663"
-                stroke="#403F3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </a>
-        </div>
-
-        <video autoplay muted loop playsinline class="hero-offer__background">
-          <source src="./assets/vid/2909914-uhd_3840_2024_24fps.mp4" type="video/mp4">
-        </video>
-      </section>
-
-      <section class="section-wrapper" id="favorite">
-        <header class="section-header">
-          <h2>Choose your <em class="text_accent">favorite</em> coffee</h2>
-        </header>
-
-        <div class="section-content">
-          <div class="slider-wrapper">
-            <div class="slider-wrapper__button-container">
-              <button class="slider-wrapper__button slider-wrapper__button_left">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M18.5 12H6M12 18L6 12L12 6" stroke="#403F3D" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </button>
-            </div>
-
-            <div class="slider">
-              <ul class="slider__slide-list">
-                <li class="slider__slide">
-                  <img src="./assets/img/slide-1-image.png" alt="slider image">
-                  <div class="slider__slide-description">
-                    <h3>S’mores Frappuccino</h3>
-                    <p>This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped
-                      with oat milk.</p>
-                    <h3>$5.50</h3>
-                  </div>
-                </li>
-
-                <li class="slider__slide">
-                  <img src="./assets/img/slide-2-image.png" alt="slider image">
-                  <div class="slider__slide-description">
-                    <h3>Caramel Macchiato</h3>
-                    <p>Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped
-                      thick foam.</p>
-                    <h3>$5.00</h3>
-                  </div>
-                </li>
-
-                <li class="slider__slide">
-                  <img src="./assets/img/slide-3-image.png" alt="slider image">
-                  <div class="slider__slide-description">
-                    <h3>Ice coffee</h3>
-                    <p>A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
-                    <h3>$4.50</h3>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <div class="slider-wrapper__button-container ">
-              <button class="slider-wrapper__button slider-wrapper__button_right">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6 12H18.5M12.5 18L18.5 12L12.5 6" stroke="#403F3D" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <footer class="section-footer">
-          <div class="slider-controls">
-            <button class="slider-controls__control slider-controls__control_active"></button>
-            <button class="slider-controls__control"></button>
-            <button class="slider-controls__control"></button>
-          </div>
-        </footer>
-      </section>
-
-      <section class="section-wrapper" id="about">
-        <header class="section-header">
-          <h2>Resource is <em class="text_accent">the perfect and cozy place</em> where you can enjoy a variety of hot
-            beverages, relax, catch up with friends, or get some work done.</h2>
-        </header>
-        <div class="section-content">
-          <div class="gallery">
-            <ul class="gallery__column">
-              <li class="gallery__item gallery__item_large"><img src="./assets/img/about-1.png" alt="gallery image">
-              </li>
-              <li class="gallery__item gallery__item_small"><img src="./assets/img/about-2.png" alt="gallery image">
-              </li>
-            </ul>
-
-            <ul class="gallery__column">
-              <li class="gallery__item gallery__item_small"><img src="./assets/img/about-3.png" alt="gallery image">
-              </li>
-              <li class="gallery__item gallery__item_large"><img src="./assets/img/about-4.png" alt="gallery image">
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="app-section" id="app">
-        <div class="app-offer">
-          <h2><em class="text_accent">Download</em> our app <br> to start ordering</h2>
-          <p>Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever
-            you are</p>
-          <ul class="app-offer__buttons text_link">
+      <section class="menu-wrapper" id="menu">
+        <header class="menu-header">
+          <h1 class="heading-2">Behind each of our cups hides an <em class="text_accent">amazing surprise</em></h1>
+          <ul class="menu-tabs text_link">
             <li>
-              <a href="https://www.apple.com/app-store/" class="app-offer__button">
-                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M26.7073 18.6307C26.6704 14.6324 30.065 12.6872 30.2203 12.5966C28.2977 9.86366 25.3178 9.49026 24.2707 9.46048C21.7679 9.20369 19.3403 10.9206 18.0654 10.9206C16.765 10.9206 14.8017 9.48529 12.6858 9.52747C9.96293 9.56841 7.41566 11.1055 6.0186 13.4923C3.13542 18.359 5.28572 25.5108 8.04802 29.4446C9.42981 31.3712 11.0444 33.5223 13.1578 33.4466C15.2254 33.3635 15.9978 32.1614 18.4929 32.1614C20.9651 32.1614 21.6903 33.4466 23.8457 33.3983C26.0647 33.3635 27.4618 31.463 28.7952 29.519C30.392 27.3108 31.0333 25.1362 31.0588 25.0245C31.0066 25.0071 26.7493 23.4229 26.7073 18.6307Z"
-                    fill="#403F3D" />
-                  <path
-                    d="M22.6357 6.87268C23.7477 5.51675 24.5086 3.67205 24.2974 1.80005C22.6879 1.86952 20.675 2.88554 19.5159 4.21169C18.4903 5.38029 17.5742 7.29571 17.8109 9.097C19.6189 9.2285 21.4753 8.20752 22.6357 6.87268Z"
-                    fill="#403F3D" />
-                </svg>
-                <div class="app-offer__button-text">
-                  <span class="text_caption">Available on the</span>
-                  <span>App Store</span>
+              <a href="./pages/menu.html" class="menu-tabs__button">
+                <div class="menu-tabs__button-icon">
+                  <img src="./assets/icon/menu/coffee.svg" alt="" aria-hidden="true">
                 </div>
+                <span>Coffee</span>
               </a>
             </li>
             <li>
-              <a href="https://play.google.com/store" class="app-offer__button">
-                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.7558 3.20297C3.39335 3.57289 3.18359 4.14884 3.18359 4.89471V31.4994C3.18359 32.2453 3.39335 32.8212 3.7558 33.1911L3.84525 33.2723L19.1359 18.37V18.0181L3.84525 3.11575L3.7558 3.20297Z"
-                    fill="#403F3D" />
-                  <path
-                    d="M26.0776 23.34L20.9863 18.37V18.0181L26.0837 13.0482L26.1979 13.1128L32.2345 16.4617C33.9573 17.4121 33.9573 18.976 32.2345 19.9324L26.1979 23.2753L26.0776 23.34V23.34Z"
-                    fill="#403F3D" />
-                  <path
-                    d="M25.2733 24.2007L20.0617 19.1195L4.68164 34.1166C5.25384 34.7031 6.18695 34.7737 7.24807 34.1873L25.2733 24.2007"
-                    fill="#403F3D" />
-                  <path
-                    d="M25.2733 12.1876L7.24807 2.20103C6.18695 1.62058 5.25384 1.69125 4.68164 2.27772L20.0617 17.2688L25.2733 12.1876Z"
-                    fill="#403F3D" />
-                </svg>
-                <div class="app-offer__button-text">
-                  <span class="text_caption">Available on</span>
-                  <span>Google Play</span>
+              <a href="./pages/menu-tea.html" class="menu-tabs__button menu-tabs__button_active">
+                <div class="menu-tabs__button-icon">
+                  <img src="./assets/icon/menu/teapot.svg" alt="" aria-hidden="true">
                 </div>
+                <span>Tea</span>
+              </a>
+            </li>
+            <li>
+              <a href="./pages/menu-dessert.html" class="menu-tabs__button">
+                <div class="menu-tabs__button-icon">
+                  <img src="./assets/icon/menu/cake.svg" alt="" aria-hidden="true">
+                </div>
+                <span>Dessert</span>
               </a>
             </li>
           </ul>
-        </div>
-        <div class="app-image">
-          <img src="./assets/img/app-screens.png" alt="app on mobile screen">
+        </header>
+
+        <div class="card-container">
+          <article class="card-wrapper">
+            <header class="card-header">
+              <img src="./assets/img/menu/tea/tea-1.jpg" alt="card image">
+            </header>
+            <div class="card-content">
+              <div class="card-content__info">
+                <h2 class="heading-3">Moroccan</h2>
+                <p>Fragrant black tea with the addition of tangerine, cinnamon, honey, lemon and mint</p>
+              </div>
+              <div class="card-content__price">
+                <h3>$4.50</h3>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-wrapper">
+            <header class="card-header">
+              <img src="./assets/img/menu/tea/tea-2.jpg" alt="card image">
+            </header>
+            <div class="card-content">
+              <div class="card-content__info">
+                <h2 class="heading-3">Ginger</h2>
+                <p>Original black tea with fresh ginger, lemon and honey</p>
+              </div>
+              <div class="card-content__price">
+                <h3>$5.00</h3>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-wrapper">
+            <header class="card-header">
+              <img src="./assets/img/menu/tea/tea-3.jpg" alt="card image">
+            </header>
+            <div class="card-content">
+              <div class="card-content__info">
+                <h2 class="heading-3">Cranberry</h2>
+                <p>Invigorating black tea with cranberry and honey</p>
+              </div>
+              <div class="card-content__price">
+                <h3>$5.00</h3>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-wrapper">
+            <header class="card-header">
+              <img src="./assets/img/menu/tea/tea-4.jpg" alt="card image">
+            </header>
+            <div class="card-content">
+              <div class="card-content__info">
+                <h2 class="heading-3">Sea buckthorn</h2>
+                <p>Toning sweet black tea with sea buckthorn, fresh thyme and cinnamon</p>
+              </div>
+              <div class="card-content__price">
+                <h3>$5.50</h3>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
     </main>
@@ -345,7 +267,6 @@
       </section>
     </footer>
   </div>
-
   <script type="module" src="./js/themes.js"></script>
 </body>
 

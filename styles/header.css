@@ -32,9 +32,9 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
-  height: 44px;
-  width: 88px;
-  padding: 8px 16px;
+  max-height: 44px;
+  max-width: 88px;
+  padding: 3px;
   border: 1px solid;
   border-radius: 100px;
 }
@@ -64,7 +64,9 @@
 
 .burger-menu {
   display: none;
-  padding: 18px 14px;
+  max-width: 44px;
+  max-height: 44px;
+  padding: 16px 14px;
   border: 1px solid;
   border-radius: 100px;
 }

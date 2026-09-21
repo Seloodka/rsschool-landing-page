@@ -28,12 +28,22 @@
   --border-inverse: rgba(193, 182, 173, 1);
 }
 
+[data-theme="dark"] .header-logo__logo-container_light {
+  display: none;
+}
+
+[data-theme="light"] .header-logo__logo-container_dark {
+  display: none;
+}
+
 .page-wrapper {
   background-color: var(--background-page);
+  transition: background-color 0.2s ease-in;
 }
 
 .page {
   color: var(--text-primary);
+  transition: color 0.2s ease-in;
 }
 
 .theme-switch {
@@ -73,6 +83,12 @@
   }
 }
 
+.coffee-menu__link {
+  svg path {
+    stroke: var(--text-primary);
+  }
+}
+
 .hero-offer {
   color: var(--text-inverse);
 }
@@ -80,6 +96,8 @@
 .hero-offer__button {
   color: var(--text-primary);
   background-color: var(--background-page);
+  transition: background-color 0.2s ease-in;
+
   svg path {
     stroke: var(--text-primary);
   }
@@ -194,4 +212,8 @@
   svg path {
     stroke: var(--text-inverse);
   }
+}
+
+.card-wrapper {
+  border-color: var(--border-primary);
 }

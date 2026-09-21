@@ -14,12 +14,26 @@
     display: none;
   }
 
+  .theme-switch {
+    max-width: 104px;
+    max-height: 52px;
+    padding: 5px 3px;
+  }
+
+  .theme-switch__button {
+    max-width: 44px;
+  }
+
   .coffee-menu {
     display: none;
   }
 
   .burger-menu {
     display: flex;
+  }
+
+  .header-actions {
+    gap: 12px;
   }
 
   .hero-wrapper {
@@ -64,13 +78,24 @@
     gap: 2px;
   }
 
-  .card-container {
-    max-height: 1052px;
-    overflow: hidden;
+  .card-wrapper:nth-child(n + 5) {
+    display: none;
   }
 
   .menu-footer {
     display: flex;
+  }
+}
+
+@media only screen and (width <= 700px) {
+  .slider-wrapper__button-container {
+    display: none;
+  }
+
+  .slider {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 }
 
@@ -94,14 +119,6 @@
     padding: 60px 16px;
   }
 
-  .slider-wrapper__button-container {
-    display: none;
-  }
-
-  .slider {
-    width: 100%;
-  }
-
   .app-section {
     gap: 40px;
   }
@@ -109,10 +126,5 @@
   .page-footer {
     padding: 60px 16px;
     gap: 40px;
-  }
-
-  .card-container {
-    max-height: 2144px;
-    overflow: hidden;
   }
 }

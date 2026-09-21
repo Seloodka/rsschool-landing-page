@@ -188,6 +188,7 @@
 .menu-tabs__button_active,
 .menu-tabs__button:hover {
   color: var(--text-inverse);
+  border-color: var(--background-container);
   background-color: var(--background-container);
 }
 

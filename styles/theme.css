@@ -28,6 +28,14 @@
   --border-inverse: rgba(193, 182, 173, 1);
 }
 
+[data-theme="dark"] .header-logo__logo-container_light {
+  display: none;
+}
+
+[data-theme="light"] .header-logo__logo-container_dark {
+  display: none;
+}
+
 .page-wrapper {
   background-color: var(--background-page);
 }

@@ -42,7 +42,6 @@
 .menu-tabs__button_active {
   pointer-events: none;
   cursor: default;
-  border: none;
 }
 
 .menu-tabs__button-icon {

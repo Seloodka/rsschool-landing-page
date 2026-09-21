@@ -49,20 +49,21 @@
 .theme-switch {
   border-color: var(--border-primary);
 }
+@media (hover: hover) {
+  .theme-switch__button_light:hover {
+    background-color: var(--background-container);
 
-.theme-switch__button_light:hover {
-  background-color: var(--background-container);
-
-  svg path {
-    fill: var(--text-primary);
+    svg path {
+      fill: var(--text-primary);
+    }
   }
-}
 
-.theme-switch__button_dark:hover {
-  background-color: var(--border-primary-dark);
+  .theme-switch__button_dark:hover {
+    background-color: var(--border-primary-dark);
 
-  svg path {
-    fill: var(--text-inverse);
+    svg path {
+      fill: var(--text-inverse);
+    }
   }
 }
 

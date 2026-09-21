@@ -54,6 +54,15 @@
   .footer-contacts__item {
     gap: 2px;
   }
+
+  .card-container {
+    max-height: 1052px;
+    overflow: hidden;
+  }
+
+  .menu-footer {
+    display: flex;
+  }
 }
 
 @media only screen and (width <= 450px) {
@@ -66,7 +75,8 @@
     line-height: 115%;
   }
 
-  h2 {
+  h2,
+  .heading-2 {
     font-size: 32px;
     line-height: 125%;
   }
@@ -96,5 +106,10 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+  }
+
+  .card-container {
+    max-height: 2144px;
+    overflow: hidden;
   }
 }

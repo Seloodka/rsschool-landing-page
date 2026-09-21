@@ -73,6 +73,12 @@
   }
 }
 
+.coffee-menu__link {
+  svg path {
+    stroke: var(--text-primary);
+  }
+}
+
 .hero-offer {
   color: var(--text-inverse);
 }

@@ -1,3 +1,10 @@
+@media only screen and (width <= 1335px) {
+  .app-section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 @media only screen and (width <= 870px) {
   .page-main {
     margin-bottom: 95px;
@@ -32,15 +39,17 @@
 
   .gallery {
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .gallery__item_small {
     display: none;
   }
 
-  .app-section {
-    flex-wrap: wrap;
-    justify-content: center;
+  .app-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 
   .page-footer {
@@ -100,12 +109,6 @@
   .page-footer {
     padding: 60px 16px;
     gap: 40px;
-  }
-
-  .app-image img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
   }
 
   .card-container {

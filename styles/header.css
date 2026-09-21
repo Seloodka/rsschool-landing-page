@@ -84,24 +84,3 @@
   border-top: 2px solid;
   width: 100%;
 }
-
-.theme-switch__button_light:hover {
-  background-color: rgba(176, 144, 122, 1);
-}
-
-.theme-switch__button_dark:hover {
-  background-color: rgba(102, 95, 85, 1);
-
-  svg path {
-    fill: rgba(225, 212, 201, 1);
-  }
-}
-
-.theme-switch__button_active {
-  pointer-events: none;
-  background-color: rgba(176, 144, 122, 1);
-
-  svg path {
-    fill: rgba(225, 212, 201, 1);
-  }
-}

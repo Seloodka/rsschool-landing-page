@@ -78,9 +78,8 @@
     gap: 2px;
   }
 
-  .card-container {
-    max-height: 1052px;
-    overflow: hidden;
+  .card-wrapper:nth-child(n + 5) {
+    display: none;
   }
 
   .menu-footer {
@@ -127,10 +126,5 @@
   .page-footer {
     padding: 60px 16px;
     gap: 40px;
-  }
-
-  .card-container {
-    max-height: 2144px;
-    overflow: hidden;
   }
 }

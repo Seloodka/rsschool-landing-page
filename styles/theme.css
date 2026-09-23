@@ -49,6 +49,7 @@
 .theme-switch {
   border-color: var(--border-primary);
 }
+
 @media (hover: hover) {
   .theme-switch__button_light:hover {
     background-color: var(--background-container);

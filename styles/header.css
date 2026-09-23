@@ -72,7 +72,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   width: 44px;
   height: 44px;
   border: 1px solid;
@@ -125,12 +125,12 @@
 .burger-menu_open .burger-menu__button {
   svg:nth-child(1) {
     transform-origin: center;
-    transform: translateY(5px) rotate(-135deg);
+    transform: translateY(4px) rotate(-135deg);
   }
 
   svg:nth-child(2) {
     transform-origin: center;
-    transform: translateY(-5px) rotate(-225deg);
+    transform: translateY(-4px) rotate(-225deg);
   }
 }
 

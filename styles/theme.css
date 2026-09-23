@@ -1,6 +1,8 @@
 :root {
-  /* default theme colors */
+  --border-primary-dark: rgba(102, 95, 85, 1);
+}
 
+[data-theme="light"] {
   --text-primary: rgba(45, 45, 45, 1);
   --text-inverse: rgba(225, 212, 201, 1);
   --text-accent: rgba(176, 144, 122, 1);
@@ -11,8 +13,6 @@
 
   --border-primary: rgba(193, 182, 173, 1);
   --border-inverse: rgba(102, 95, 85, 1);
-
-  --border-primary-dark: rgba(102, 95, 85, 1);
 }
 
 [data-theme="dark"] {
@@ -38,7 +38,7 @@
 
 .page-wrapper {
   background-color: var(--background-page);
-  transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in 0.2s;
 }
 
 .page {

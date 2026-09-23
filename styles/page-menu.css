@@ -8,6 +8,15 @@
   width: 100%;
 }
 
+.burger-menu__menu-link-container_active .link__line {
+  border-top: 2px solid;
+  width: 100%;
+}
+
+.burger-menu__menu-link_active .link__line {
+  width: 120%;
+}
+
 .menu-wrapper {
   display: flex;
   flex-direction: column;

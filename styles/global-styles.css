@@ -25,6 +25,10 @@ button {
   outline: none;
 }
 
+.prevent-scroll {
+  overflow: hidden;
+}
+
 .page-wrapper {
   display: flex;
   justify-content: center;

@@ -46,7 +46,7 @@
   }
 
   .burger-menu {
-    display: flex;
+    display: block;
   }
 
   .header-actions {

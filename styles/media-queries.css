@@ -95,6 +95,10 @@
     gap: 2px;
   }
 
+  .footer-contacts__item_info {
+    gap: 2;
+  }
+
   .card-wrapper:nth-child(n + 5) {
     display: none;
   }

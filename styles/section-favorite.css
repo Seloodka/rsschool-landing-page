@@ -1,3 +1,7 @@
+#favorite > .section-header {
+  text-align: center;
+}
+
 .slider-wrapper {
   display: flex;
   flex-flow: row nowrap;

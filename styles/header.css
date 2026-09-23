@@ -122,10 +122,6 @@
   gap: 4px;
 }
 
-.burger-menu__menu-link_active .link__line {
-  width: 120%;
-}
-
 .burger-menu_open .burger-menu__button {
   svg:nth-child(1) {
     transform-origin: center;

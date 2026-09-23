@@ -77,11 +77,21 @@
   }
 }
 
-.burger-menu {
+.burger-menu__button {
   border-color: var(--border-inverse);
 
   svg path {
-    stroke: var(--border-inverse);
+    stroke: var(--text-primary);
+  }
+}
+
+.burger-menu__nav {
+  background-color: var(--background-page);
+}
+
+.burger-menu__menu-link {
+  svg path {
+    stroke: var(--text-primary);
   }
 }
 

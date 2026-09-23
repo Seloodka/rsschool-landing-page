@@ -8,11 +8,6 @@
   width: 100%;
 }
 
-.burger-menu__menu-link-container_active .link__line {
-  border-top: 2px solid;
-  width: 100%;
-}
-
 .burger-menu__menu-link_active .link__line {
   width: 120%;
 }
@@ -35,7 +30,6 @@
 
 .menu-tabs {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
   list-style: none;
@@ -46,6 +40,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  max-height: 46px;
   padding: 8px 16px 8px 8px;
   border: 1px solid;
   border-radius: 100px;

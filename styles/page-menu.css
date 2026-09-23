@@ -26,6 +26,8 @@
 
 .menu-tabs {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 16px;
   list-style: none;
   min-height: 46px;
@@ -62,17 +64,17 @@
 }
 
 .card-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 310px));
   justify-content: center;
   width: 100%;
-  gap: 40px;
+  grid-gap: 40px;
 }
 
 .card-wrapper {
   display: flex;
   flex-direction: column;
-  width: 310px;
+
   height: 506px;
   border: 1px solid;
   border-radius: 40px;
@@ -93,8 +95,14 @@
   transition: all 0.2s ease-in-out;
 }
 
-.card-wrapper:hover img {
-  transform: scale(1);
+@media (hover: hover) {
+  .card-wrapper:hover {
+    cursor: pointer;
+  }
+
+  .card-wrapper:hover img {
+    transform: scale(1);
+  }
 }
 
 .card-content {

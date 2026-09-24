@@ -185,9 +185,9 @@
         </header>
 
         <div class="section-content">
-          <div class="slider-wrapper">
-            <div class="slider-wrapper__button-container">
-              <button class="slider-wrapper__button slider-wrapper__button_left">
+          <div class="carousel-wrapper">
+            <div class="carousel-wrapper__button-container">
+              <button class="carousel-wrapper__button carousel-wrapper__button_prev">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M18.5 12H6M12 18L6 12L12 6" stroke="#403F3D" stroke-linecap="round"
                     stroke-linejoin="round" />
@@ -195,11 +195,11 @@
               </button>
             </div>
 
-            <div class="slider">
-              <ul class="slider__slide-list">
-                <li class="slider__slide">
+            <div class="carousel">
+              <ul class="carousel__slide-list">
+                <li class="carousel__slide">
                   <img src="./assets/img/slide-1-image.png" alt="S’mores Frappuccino image">
-                  <div class="slider__slide-description">
+                  <div class="carousel__slide-description">
                     <h3>S’mores Frappuccino</h3>
                     <p>This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped
                       with oat milk.</p>
@@ -207,9 +207,9 @@
                   </div>
                 </li>
 
-                <li class="slider__slide">
+                <li class="carousel__slide">
                   <img src="./assets/img/slide-2-image.png" alt="Caramel Macchiato image">
-                  <div class="slider__slide-description">
+                  <div class="carousel__slide-description">
                     <h3>Caramel Macchiato</h3>
                     <p>Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped
                       thick foam.</p>
@@ -217,9 +217,9 @@
                   </div>
                 </li>
 
-                <li class="slider__slide">
+                <li class="carousel__slide">
                   <img src="./assets/img/slide-3-image.png" alt="Ice coffee image">
-                  <div class="slider__slide-description">
+                  <div class="carousel__slide-description">
                     <h3>Ice coffee</h3>
                     <p>A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
                     <h3>$4.50</h3>
@@ -228,8 +228,8 @@
               </ul>
             </div>
 
-            <div class="slider-wrapper__button-container ">
-              <button class="slider-wrapper__button slider-wrapper__button_right">
+            <div class="carousel-wrapper__button-container ">
+              <button class="carousel-wrapper__button carousel-wrapper__button_next">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6 12H18.5M12.5 18L18.5 12L12.5 6" stroke="#403F3D" stroke-linecap="round"
                     stroke-linejoin="round" />
@@ -240,10 +240,10 @@
         </div>
 
         <footer class="section-footer">
-          <div class="slider-controls">
-            <button class="slider-controls__control slider-controls__control_active"></button>
-            <button class="slider-controls__control"></button>
-            <button class="slider-controls__control"></button>
+          <div class="carousel-controls">
+            <button class="carousel-controls__control carousel-controls__control_active"></button>
+            <button class="carousel-controls__control"></button>
+            <button class="carousel-controls__control"></button>
           </div>
         </footer>
       </section>
@@ -399,6 +399,7 @@
 
   <script type="module" src="./js/themes.js"></script>
   <script type="module" src="./js/burger-menu.js"></script>
+  <script type="module" src="./js/carousel.js"></script>
 </body>
 
 </html>

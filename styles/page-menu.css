@@ -1,0 +1,138 @@
+.coffee-menu {
+  pointer-events: none;
+  cursor: default;
+}
+
+.coffee-menu_active .link__line {
+  border-top: 2px solid;
+  width: 100%;
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.menu-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  max-width: 800px;
+  text-align: center;
+}
+
+.menu-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  list-style: none;
+  min-height: 46px;
+}
+
+.menu-tabs__button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px 8px 8px;
+  border: 1px solid;
+  border-radius: 100px;
+}
+
+.menu-tabs__button_active {
+  pointer-events: none;
+  cursor: default;
+}
+
+.menu-tabs__button-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+}
+
+.menu-tabs__button-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 310px));
+  justify-content: center;
+  width: 100%;
+  grid-gap: 40px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  height: 506px;
+  border: 1px solid;
+  border-radius: 40px;
+}
+
+.card-header {
+  min-height: 310px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.card-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+@media (hover: hover) {
+  .card-wrapper:hover {
+    cursor: pointer;
+  }
+
+  .card-wrapper:hover img {
+    transform: scale(1);
+  }
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  height: 100%;
+}
+
+.card-content__info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menu-footer {
+  display: none;
+}
+
+.menu-footer__button-container {
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.menu-footer__load-more-button {
+  padding: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 100px;
+}

@@ -1,0 +1,222 @@
+:root {
+  /* default theme colors */
+
+  --text-primary: rgba(45, 45, 45, 1);
+  --text-inverse: rgba(225, 212, 201, 1);
+  --text-accent: rgba(176, 144, 122, 1);
+
+  --background-page: rgba(225, 212, 201, 1);
+  --background-container: rgba(102, 95, 85, 1);
+  --background-overlay: rgba(64, 63, 61, 0.8);
+
+  --border-primary: rgba(193, 182, 173, 1);
+  --border-inverse: rgba(102, 95, 85, 1);
+
+  --border-primary-dark: rgba(102, 95, 85, 1);
+}
+
+[data-theme="dark"] {
+  --text-primary: rgba(225, 212, 201, 1);
+  --text-inverse: rgba(225, 212, 201, 1);
+  --text-accent: rgba(176, 144, 122, 1);
+
+  --background-page: rgba(41, 40, 38, 1);
+  --background-container: rgba(64, 63, 61, 1);
+  --background-overlay: rgba(41, 40, 38, 0.8);
+
+  --border-primary: rgba(102, 95, 85, 1);
+  --border-inverse: rgba(193, 182, 173, 1);
+}
+
+[data-theme="dark"] .header-logo__logo-container_light {
+  display: none;
+}
+
+[data-theme="light"] .header-logo__logo-container_dark {
+  display: none;
+}
+
+.page-wrapper {
+  background-color: var(--background-page);
+  transition: background-color 0.2s ease-in;
+}
+
+.page {
+  color: var(--text-primary);
+  transition: color 0.2s ease-in;
+}
+
+.theme-switch {
+  border-color: var(--border-primary);
+}
+
+@media (hover: hover) {
+  .theme-switch__button_light:hover {
+    background-color: var(--background-container);
+
+    svg path {
+      fill: var(--text-primary);
+    }
+  }
+
+  .theme-switch__button_dark:hover {
+    background-color: var(--border-primary-dark);
+
+    svg path {
+      fill: var(--text-inverse);
+    }
+  }
+}
+
+.theme-switch__button_active {
+  pointer-events: none;
+  background-color: var(--text-accent);
+
+  svg path {
+    fill: var(--text-inverse);
+  }
+}
+
+.burger-menu {
+  border-color: var(--border-inverse);
+
+  svg path {
+    stroke: var(--border-inverse);
+  }
+}
+
+.coffee-menu__link {
+  svg path {
+    stroke: var(--text-primary);
+  }
+}
+
+.hero-offer {
+  color: var(--text-inverse);
+}
+
+.hero-offer__button {
+  color: var(--text-primary);
+  background-color: var(--background-page);
+  transition: background-color 0.2s ease-in;
+
+  svg path {
+    stroke: var(--text-primary);
+  }
+}
+
+.text_accent {
+  color: var(--text-accent);
+}
+
+.slider-wrapper__button {
+  border-color: var(--text-primary);
+  transition: all 0.2s ease-in;
+
+  svg path {
+    stroke: var(--text-primary);
+  }
+}
+
+.slider-wrapper__button:hover {
+  border-color: var(--background-container);
+  background-color: var(--background-container);
+
+  svg path {
+    stroke: var(--text-inverse);
+  }
+}
+
+.slider-controls__control {
+  background-color: var(--border-primary);
+}
+
+.slider-controls__control_active {
+  background-color: var(--border-inverse);
+}
+
+.app-offer__button {
+  border-color: var(--border-inverse);
+  transition: all 0.2s ease-in;
+
+  svg path {
+    fill: var(--text-primary);
+  }
+}
+
+.app-offer__button:hover {
+  color: var(--text-inverse);
+  border-color: var(--background-container);
+  background-color: var(--background-container);
+
+  svg path {
+    fill: var(--text-inverse);
+  }
+}
+
+.page-footer {
+  color: var(--text-inverse);
+  background-color: var(--background-container);
+}
+
+.socials__link {
+  border-color: var(--text-inverse);
+  transition: all 0.2s ease-in;
+
+  svg path {
+    stroke: var(--text-inverse);
+  }
+}
+
+.socials__link:hover {
+  background-color: var(--background-page);
+  border-color: var(--background-page);
+
+  svg path {
+    stroke: var(--text-primary);
+  }
+}
+
+.menu-tabs__button {
+  border-color: var(--border-primary);
+  transition: all 0.2s ease-in;
+}
+
+.menu-tabs__button > .menu-tabs__button-icon {
+  background-color: var(--border-primary);
+  transition: all 0.2s ease-in;
+}
+
+.menu-tabs__button_active,
+.menu-tabs__button:hover {
+  color: var(--text-inverse);
+  border-color: var(--background-container);
+  background-color: var(--background-container);
+}
+
+.menu-tabs__button_active > .menu-tabs__button-icon,
+.menu-tabs__button:hover > .menu-tabs__button-icon {
+  background-color: var(--background-page);
+}
+
+.menu-footer__load-more-button {
+  border-color: var(--text-primary);
+  transition: all 0.2s ease-in;
+
+  svg path {
+    stroke: var(--text-primary);
+  }
+}
+
+.menu-footer__load-more-button:hover {
+  border-color: var(--background-container);
+  background-color: var(--background-container);
+
+  svg path {
+    stroke: var(--text-inverse);
+  }
+}
+
+.card-wrapper {
+  border-color: var(--border-primary);
+}

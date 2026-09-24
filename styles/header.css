@@ -1,0 +1,88 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  max-height: 60px;
+}
+
+.header-nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 44px;
+  gap: 40px;
+  height: 100%;
+  list-style: none;
+}
+
+.header-nav__item {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  height: 100%;
+}
+
+.theme-switch {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  max-height: 44px;
+  max-width: 88px;
+  padding: 3px;
+  border: 1px solid;
+  border-radius: 100px;
+}
+
+.theme-switch__button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  max-width: 36px;
+  max-height: 36px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in;
+}
+
+.coffee-menu {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.coffee-menu__link {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.burger-menu {
+  display: none;
+  max-width: 44px;
+  max-height: 44px;
+  padding: 16px 14px;
+  border: 1px solid;
+  border-radius: 100px;
+}
+
+.link__line {
+  border-top: 2px solid;
+  width: 0%;
+  transition: all 0.3s ease-in;
+}
+
+.header-nav__item:hover .link__line {
+  border-top: 2px solid;
+  width: 100%;
+}
+
+.coffee-menu:hover .link__line {
+  border-top: 2px solid;
+  width: 100%;
+}

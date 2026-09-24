@@ -58,7 +58,6 @@
 .coffee-menu__link {
   display: flex;
   flex-flow: row nowrap;
-  align-items: baseline;
   gap: 8px;
 }
 

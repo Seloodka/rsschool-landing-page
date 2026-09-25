@@ -98,14 +98,6 @@
   .footer-contacts__item_info {
     gap: 2;
   }
-
-  .card-wrapper:nth-child(n + 5) {
-    display: none;
-  }
-
-  .menu-footer {
-    display: flex;
-  }
 }
 
 @media only screen and (width <= 700px) {

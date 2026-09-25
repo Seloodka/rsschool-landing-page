@@ -154,154 +154,36 @@
       <section class="menu-wrapper" id="menu">
         <header class="menu-header">
           <h1 class="heading-2">Behind each of our cups hides an <em class="text_accent">amazing surprise</em></h1>
-          <ul class="menu-tabs text_link">
+          <ul class="menu-tabs">
             <li>
-              <a href="./pages/menu.html" class="menu-tabs__button menu-tabs__button_active">
+              <button class="menu-tabs__button text_link" data-category="coffee">
                 <div class="menu-tabs__button-icon">
                   <img src="./assets/icon/menu/coffee.svg" alt="">
                 </div>
                 <span>Coffee</span>
-              </a>
+              </button>
             </li>
             <li>
-              <a href="./pages/menu-tea.html" class="menu-tabs__button">
+              <button class="menu-tabs__button text_link" data-category="tea">
                 <div class="menu-tabs__button-icon">
                   <img src="./assets/icon/menu/teapot.svg" alt="">
                 </div>
                 <span>Tea</span>
-              </a>
+              </button>
             </li>
             <li>
-              <a href="./pages/menu-dessert.html" class="menu-tabs__button">
+              <button class="menu-tabs__button text_link" data-category="dessert">
                 <div class="menu-tabs__button-icon">
                   <img src="./assets/icon/menu/cake.svg" alt="">
                 </div>
                 <span>Dessert</span>
-              </a>
+              </button>
             </li>
           </ul>
         </header>
 
         <div class="card-container">
-          <article class="card-wrapper">
-            <header class="card-header">
-              <img src="./assets/img/menu/coffee/coffee-1.png" alt="Irish coffee image">
-            </header>
-            <div class="card-content">
-              <div class="card-content__info">
-                <h2 class="heading-3">Irish coffee</h2>
-                <p>Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
-              </div>
-              <div class="card-content__price">
-                <h3>$7.00</h3>
-              </div>
-            </div>
-          </article>
 
-          <article class="card-wrapper">
-            <header class="card-header">
-              <img src="./assets/img/menu/coffee/coffee-2.png" alt="Kahlua coffee image">
-            </header>
-            <div class="card-content">
-              <div class="card-content__info">
-                <h2 class="heading-3">Kahlua coffee</h2>
-                <p>Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</p>
-              </div>
-              <div class="card-content__price">
-                <h3>$7.00</h3>
-              </div>
-            </div>
-          </article>
-
-          <article class="card-wrapper">
-            <header class="card-header">
-              <img src="./assets/img/menu/coffee/coffee-3.png" alt="Honey raf image">
-            </header>
-            <div class="card-content">
-              <div class="card-content__info">
-                <h2 class="heading-3">Honey raf</h2>
-                <p>Espresso with frothed milk, cream and aromatic honey</p>
-              </div>
-              <div class="card-content__price">
-                <h3>$5.50</h3>
-              </div>
-            </div>
-          </article>
-
-          <article class="card-wrapper">
-            <header class="card-header">
-              <img src="./assets/img/menu/coffee/coffee-4.png" alt="Ice cappuccino image">
-            </header>
-            <div class="card-content">
-              <div class="card-content__info">
-                <h2 class="heading-3">Ice cappuccino</h2>
-                <p>Cappuccino with soft thick foam in summer version with ice</p>
-              </div>
-              <div class="card-content__price">
-                <h3>$5.00</h3>
-              </div>
-            </div>
-          </article>
-
-          <article class="card-wrapper">
-            <header class="card-header">
-              <img src="./assets/img/menu/coffee/coffee-5.png" alt="Espresso image">
-            </header>
-            <div class="card-content">
-              <div class="card-content__info">
-                <h2 class="heading-3">Espresso</h2>
-                <p>Classic black coffee</p>
-              </div>
-              <div class="card-content__price">
-                <h3>$4.50</h3>
-              </div>
-            </div>
-          </article>
-
-          <article class="card-wrapper">
-            <header class="card-header">
-              <img src="./assets/img/menu/coffee/coffee-6.png" alt="Latte image">
-            </header>
-            <div class="card-content">
-              <div class="card-content__info">
-                <h2 class="heading-3">Latte</h2>
-                <p>Espresso coffee with the addition of steamed milk and dense milk foam</p>
-              </div>
-              <div class="card-content__price">
-                <h3>$5.50</h3>
-              </div>
-            </div>
-          </article>
-
-          <article class="card-wrapper">
-            <header class="card-header">
-              <img src="./assets/img/menu/coffee/coffee-7.png" alt="Latte macchiato image">
-            </header>
-            <div class="card-content">
-              <div class="card-content__info">
-                <h2 class="heading-3">Latte macchiato</h2>
-                <p>Espresso with frothed milk and chocolate</p>
-              </div>
-              <div class="card-content__price">
-                <h3>$5.50</h3>
-              </div>
-            </div>
-          </article>
-
-          <article class="card-wrapper">
-            <header class="card-header">
-              <img src="./assets/img/menu/coffee/coffee-8.png" alt="Coffee with cognac image">
-            </header>
-            <div class="card-content">
-              <div class="card-content__info">
-                <h2 class="heading-3">Coffee with cognac</h2>
-                <p>Fragrant black coffee with cognac and whipped cream</p>
-              </div>
-              <div class="card-content__price">
-                <h3>$5.50</h3>
-              </div>
-            </div>
-          </article>
         </div>
 
         <footer class="menu-footer">
@@ -390,6 +272,7 @@
   </div>
   <script type="module" src="./js/themes.js"></script>
   <script type="module" src="./js/burger-menu.js"></script>
+  <script type="module" src="./js/menu-categories.js"></script>
 </body>
 
 </html>

@@ -25,6 +25,10 @@ button {
   outline: none;
 }
 
+.hidden {
+  display: none;
+}
+
 .prevent-scroll {
   overflow: hidden;
 }

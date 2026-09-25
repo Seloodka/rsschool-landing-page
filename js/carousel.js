@@ -6,21 +6,21 @@ const toggleBottomControl = (slide) => {
 const setNextSlide = () => {
   if (currentSlide === maxSlides) {
     currentSlide = 0;
-    carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
   } else {
     currentSlide += 1;
-    carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
   }
+
+  carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
 };
 
 const setPrevSlide = () => {
   if (currentSlide === 0) {
     currentSlide = maxSlides;
-    carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
   } else {
     currentSlide -= 1;
-    carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
   }
+
+  carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
 };
 
 const setSlide = (slide) => {

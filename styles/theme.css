@@ -1,6 +1,8 @@
 :root {
-  /* default theme colors */
+  --border-primary-dark: rgba(102, 95, 85, 1);
+}
 
+[data-theme="light"] {
   --text-primary: rgba(45, 45, 45, 1);
   --text-inverse: rgba(225, 212, 201, 1);
   --text-accent: rgba(176, 144, 122, 1);
@@ -11,8 +13,6 @@
 
   --border-primary: rgba(193, 182, 173, 1);
   --border-inverse: rgba(102, 95, 85, 1);
-
-  --border-primary-dark: rgba(102, 95, 85, 1);
 }
 
 [data-theme="dark"] {
@@ -38,7 +38,7 @@
 
 .page-wrapper {
   background-color: var(--background-page);
-  transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in 0.2s;
 }
 
 .page {
@@ -77,11 +77,21 @@
   }
 }
 
-.burger-menu {
+.burger-menu__button {
   border-color: var(--border-inverse);
 
   svg path {
-    stroke: var(--border-inverse);
+    stroke: var(--text-primary);
+  }
+}
+
+.burger-menu__nav {
+  background-color: var(--background-page);
+}
+
+.burger-menu__menu-link {
+  svg path {
+    stroke: var(--text-primary);
   }
 }
 
@@ -109,7 +119,7 @@
   color: var(--text-accent);
 }
 
-.slider-wrapper__button {
+.carousel-wrapper__button {
   border-color: var(--text-primary);
   transition: all 0.2s ease-in;
 
@@ -118,20 +128,34 @@
   }
 }
 
-.slider-wrapper__button:hover {
-  border-color: var(--background-container);
-  background-color: var(--background-container);
+@media (hover: hover) {
+  .carousel-wrapper__button:hover {
+    border-color: var(--background-container);
+    background-color: var(--background-container);
 
-  svg path {
-    stroke: var(--text-inverse);
+    svg path {
+      stroke: var(--text-inverse);
+    }
   }
 }
 
-.slider-controls__control {
-  background-color: var(--border-primary);
+@media (hover: none) {
+  .carousel-wrapper__button:active {
+    border-color: var(--background-container);
+    background-color: var(--background-container);
+
+    svg path {
+      stroke: var(--text-inverse);
+    }
+  }
 }
 
-.slider-controls__control_active {
+.carousel-controls__control {
+  background-color: var(--border-primary);
+  transition: background-color 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.carousel-controls__control_active {
   background-color: var(--border-inverse);
 }
 

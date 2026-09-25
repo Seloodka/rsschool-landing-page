@@ -46,7 +46,7 @@
   }
 
   .burger-menu {
-    display: flex;
+    display: block;
   }
 
   .header-actions {
@@ -109,14 +109,12 @@
 }
 
 @media only screen and (width <= 700px) {
-  .slider-wrapper__button-container {
+  .carousel-wrapper__button-container {
     display: none;
   }
 
-  .slider {
-    display: flex;
+  .carousel-wrapper {
     justify-content: center;
-    width: 100%;
   }
 }
 
@@ -150,6 +148,6 @@
   }
 
   .menu-tabs {
-    gap: 8px;
+    gap: 7px;
   }
 }

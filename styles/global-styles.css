@@ -23,6 +23,9 @@ button {
   border: none;
   cursor: pointer;
   outline: none;
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
 }
 
 .hidden {

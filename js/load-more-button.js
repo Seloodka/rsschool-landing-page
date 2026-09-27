@@ -40,7 +40,6 @@ function screenTabletHandler(event) {
     return;
   }
 
-  console.log("iii");
   if (event.matches) {
     hideCards(cardsForHide);
     showLoadMoreButton();

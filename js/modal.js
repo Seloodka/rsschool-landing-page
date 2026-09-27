@@ -155,7 +155,6 @@ const addModalCloseHandlers = () => {
   );
 
   closeModalButton.addEventListener("click", modalClose);
-  modalBackdrop.addEventListener("click", backdropCloseHandler);
   document.addEventListener("keydown", backdropCloseHandler);
 };
 
@@ -254,6 +253,7 @@ const modalSetUp = () => {
   modalBackdrop.append(modalWindow);
   document.querySelector(".page").prepend(modalBackdrop);
 
+  modalBackdrop.addEventListener("click", backdropCloseHandler);
   addCardsHandler();
 };
 

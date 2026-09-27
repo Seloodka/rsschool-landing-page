@@ -12,13 +12,12 @@ const keyDownHandler = (event) => {
   }
 };
 
-const getScrollWidth = () => {
+export const getScrollWidth = () => {
   return window.innerWidth - document.documentElement.clientWidth;
 };
 
 const openBurgerMenu = () => {
-  document.body.style.paddingRight = getScrollWidth() + "px";
-  burgerNav.style.paddingLeft = "";
+  page.style.paddingRight = getScrollWidth() + "px";
 
   page.classList.add("prevent-scroll");
   burgerMenu.classList.add("burger-menu_open");
@@ -26,7 +25,6 @@ const openBurgerMenu = () => {
 };
 
 const closeBurgerMenu = () => {
-  burgerNav.style.paddingLeft = page.style.paddingRight;
   page.style.paddingRight = "";
 
   page.classList.remove("prevent-scroll");

@@ -13,6 +13,10 @@
 
   --border-primary: rgba(193, 182, 173, 1);
   --border-inverse: rgba(102, 95, 85, 1);
+
+  --modal-background: rgba(225, 212, 201, 1);
+  --modal-control-active: rgba(102, 95, 85, 1);
+  --modal-close-button-background: rgba(102, 95, 85, 1);
 }
 
 [data-theme="dark"] {
@@ -26,6 +30,10 @@
 
   --border-primary: rgba(102, 95, 85, 1);
   --border-inverse: rgba(193, 182, 173, 1);
+
+  --modal-background: rgba(64, 63, 61, 1);
+  --modal-control-active: rgba(41, 40, 38, 1);
+  --modal-close-button-background: rgba(41, 40, 38, 1);
 }
 
 [data-theme="dark"] .header-logo__logo-container_light {
@@ -202,7 +210,6 @@
 }
 
 .menu-tabs__button {
-  color: var(--text-primary);
   border-color: var(--border-primary);
   transition: all 0.2s ease-in;
 }
@@ -214,9 +221,9 @@
 
 .menu-tabs__button_active,
 .menu-tabs__button:hover {
-  color: var(--text-inverse);
   border-color: var(--background-container);
   background-color: var(--background-container);
+  color: var(--text-inverse);
 }
 
 .menu-tabs__button_active > .menu-tabs__button-icon,
@@ -244,4 +251,70 @@
 
 .card-wrapper {
   border-color: var(--border-primary);
+}
+
+.modal-window {
+  background-color: var(--modal-background);
+}
+
+.modal-description__alert svg path {
+  stroke: var(--text-primary);
+}
+
+.modal-description__button {
+  border-color: var(--border-primary);
+  transition: all 0.2s ease-in;
+}
+
+.modal-description__button-icon {
+  background-color: var(--border-primary);
+  transition: all 0.2s ease-in;
+}
+
+.modal-description__button_active {
+  background-color: var(--modal-control-active);
+  border-color: var(--modal-control-active);
+
+  .modal-description__button-icon {
+    background-color: var(--modal-background);
+  }
+
+  span {
+    color: var(--text-inverse);
+  }
+}
+
+.modal-description__alert {
+  border-color: var(--border-primary);
+}
+
+.modal-description__close-button {
+  border-color: var(--border-primary);
+  transition: all 0.3s ease-in-out;
+}
+
+@media (hover: hover) {
+  .modal-description__button:hover {
+    background-color: var(--modal-control-active);
+    border-color: var(--modal-control-active);
+
+    .modal-description__button-icon {
+      background-color: var(--modal-background);
+    }
+
+    span {
+      color: var(--text-inverse);
+    }
+  }
+
+  .modal-description__close-button:hover {
+    background-color: var(--modal-close-button-background);
+    border-color: var(--modal-close-button-background);
+    color: var(--text-inverse);
+  }
+}
+
+.modal-description__button:active,
+.modal-description__close-button:active {
+  transform: scale(1.1);
 }

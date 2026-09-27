@@ -314,7 +314,6 @@
   }
 }
 
-.modal-description__button:active,
-.modal-description__close-button:active {
+.modal-description__button:active {
   transform: scale(1.1);
 }

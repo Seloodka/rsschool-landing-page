@@ -1,5 +1,5 @@
 import productsData from "../data/products.json" with { type: "json" };
-import { cardContainer, categoryControls } from "./menu-categories.js";
+import { cardContainer } from "./menu-categories.js";
 import { getScrollWidth } from "./burger-menu.js";
 
 const addToPrice = (value) => {
@@ -149,13 +149,17 @@ const createModalWindowHTML = (product, imagePath) => {
 };
 
 const addModalCloseHandlers = () => {
-  const modalBackdrop = document.querySelector(".modal-backdrop");
-  const closeModalButton = modalBackdrop.querySelector(
+  const closeModalButton = document.querySelector(
     ".modal-description__close-button",
   );
 
   closeModalButton.addEventListener("click", modalClose);
   document.addEventListener("keydown", backdropCloseHandler);
+};
+
+const getCardName = (card) => {
+  return card.querySelector(".card-content__info").firstElementChild
+    .textContent;
 };
 
 const createModalWindow = (card) => {
@@ -202,10 +206,11 @@ const modalClose = () => {
   modalBackdrop.classList.add("modal-hidden");
 
   document.removeEventListener("keydown", backdropCloseHandler);
-  price._priceAdds = 0;
+  cardContainer.removeEventListener("click", cardClickHandler);
 
   setTimeout(() => {
     modalWindow.replaceChildren();
+    cardContainer.addEventListener("click", cardClickHandler);
   }, 300);
 };
 
@@ -227,20 +232,15 @@ const backdropCloseHandler = (event) => {
   }
 };
 
-const getCardName = (card) => {
-  return card.querySelector(".card-content__info").firstElementChild
-    .textContent;
-};
-
 const cardClickHandler = (event) => {
-  createModalWindow(event.currentTarget);
-  modalOpen();
-};
+  const card = event.target.closest(".card-wrapper");
 
-const addCardsHandler = () => {
-  [...cardContainer.children].forEach((card) =>
-    card.addEventListener("click", cardClickHandler),
-  );
+  if (!card) {
+    return;
+  }
+
+  createModalWindow(card);
+  modalOpen();
 };
 
 const modalSetUp = () => {
@@ -251,10 +251,10 @@ const modalSetUp = () => {
   modalWindow.classList.add("modal-window");
 
   modalBackdrop.append(modalWindow);
-  document.querySelector(".page").prepend(modalBackdrop);
+  document.querySelector(".page").append(modalBackdrop);
 
   modalBackdrop.addEventListener("click", backdropCloseHandler);
-  addCardsHandler();
+  cardContainer.addEventListener("click", cardClickHandler);
 };
 
 const price = {
@@ -270,9 +270,5 @@ const price = {
   _priceAdds: 0,
   basePrice: 0,
 };
-
-categoryControls.forEach((control) =>
-  control.addEventListener("click", addCardsHandler),
-);
 
 modalSetUp();

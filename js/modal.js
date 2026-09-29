@@ -149,8 +149,7 @@ const createModalWindowHTML = (product, imagePath) => {
 };
 
 const addModalCloseHandlers = () => {
-  const modalBackdrop = document.querySelector(".modal-backdrop");
-  const closeModalButton = modalBackdrop.querySelector(
+  const closeModalButton = document.querySelector(
     ".modal-description__close-button",
   );
 
@@ -207,10 +206,11 @@ const modalClose = () => {
   modalBackdrop.classList.add("modal-hidden");
 
   document.removeEventListener("keydown", backdropCloseHandler);
-  price._priceAdds = 0;
+  cardContainer.removeEventListener("click", cardClickHandler);
 
   setTimeout(() => {
     modalWindow.replaceChildren();
+    cardContainer.addEventListener("click", cardClickHandler);
   }, 300);
 };
 

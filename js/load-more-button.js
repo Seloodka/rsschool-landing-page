@@ -20,23 +20,22 @@ const showLoadMoreButton = () => {
   menuFooter.classList.remove("hidden");
 };
 
-const categoryControlsHandler = () => {
-  if (mediaQuery.matches) {
-    screenTabletHandler(mediaQuery);
-  }
-};
-
 const loadMoreButtonHandler = () => {
   const cards = getCardsForHide();
   showCards(cards);
   hideLoadMoreButton();
+  cardsShown = true;
 };
 
-function screenTabletHandler(event) {
+const screenTabletHandler = (event) => {
   const cardsForHide = getCardsForHide();
 
   if (cardsForHide.length === 0) {
     hideLoadMoreButton();
+    return;
+  }
+
+  if (cardsShown) {
     return;
   }
 
@@ -47,10 +46,19 @@ function screenTabletHandler(event) {
     showCards(cardsForHide);
     hideLoadMoreButton();
   }
-}
+};
+
+const categoryControlsHandler = () => {
+  cardsShown = false;
+
+  if (mediaQuery.matches) {
+    screenTabletHandler(mediaQuery);
+  }
+};
 
 const menuFooter = document.querySelector(".menu-footer");
 const loadMoreButton = document.querySelector(".menu-footer__load-more-button");
+let cardsShown = false;
 
 const mediaQuery = window.matchMedia("(max-width: 768px)");
 mediaQuery.addEventListener("change", screenTabletHandler);

@@ -4,6 +4,8 @@ const toggleBottomControl = (slide) => {
 };
 
 const setNextSlide = () => {
+  toggleBottomControl(currentSlide);
+
   if (currentSlide === maxSlides) {
     currentSlide = 0;
   } else {
@@ -11,9 +13,13 @@ const setNextSlide = () => {
   }
 
   carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+  toggleBottomControl(currentSlide);
 };
 
 const setPrevSlide = () => {
+  toggleBottomControl(currentSlide);
+
   if (currentSlide === 0) {
     currentSlide = maxSlides;
   } else {
@@ -21,6 +27,8 @@ const setPrevSlide = () => {
   }
 
   carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+  toggleBottomControl(currentSlide);
 };
 
 const setSlide = (slide) => {
@@ -29,15 +37,11 @@ const setSlide = (slide) => {
 };
 
 const sideButtonsHandler = (event) => {
-  toggleBottomControl(currentSlide);
-
   if (event.currentTarget.classList.contains("carousel-wrapper__button_prev")) {
     setPrevSlide();
   } else {
     setNextSlide();
   }
-
-  toggleBottomControl(currentSlide);
 };
 
 const carouselBottomControlsHandler = (event) => {
@@ -49,10 +53,39 @@ const carouselBottomControlsHandler = (event) => {
   toggleBottomControl(currentSlide);
 };
 
+const carouselTouchStartHandler = (event) => {
+  touchPos.start = event.touches[0].clientX;
+};
+
+const carouselTouchEndHandler = (event) => {
+  touchPos.end = event.changedTouches[0].clientX;
+  const minDiff = 50;
+  const currDiff = touchPos.start - touchPos.end;
+
+  if (Math.abs(currDiff) < minDiff) {
+    return;
+  }
+
+  if (currDiff > 0) {
+    setNextSlide();
+  } else {
+    setPrevSlide();
+  }
+};
+
+const initCarouselSwipes = (carousel) => {
+  carousel.addEventListener("touchstart", carouselTouchStartHandler);
+  carousel.addEventListener("touchend", carouselTouchEndHandler);
+};
 const carousel = document.querySelector(".carousel__slide-list");
 
 const maxSlides = carousel.scrollWidth / carousel.clientWidth - 1;
 let currentSlide = 0;
+
+const touchPos = {
+  start: 0,
+  end: 0,
+};
 
 const carouselSideButtons = document.querySelectorAll(
   ".carousel-wrapper__button",
@@ -67,3 +100,5 @@ const carouselBottomControls = document.querySelectorAll(
 carouselBottomControls.forEach((button) =>
   button.addEventListener("click", carouselBottomControlsHandler),
 );
+
+initCarouselSwipes(carousel);

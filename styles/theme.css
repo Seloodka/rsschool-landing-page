@@ -202,6 +202,7 @@
 }
 
 .menu-tabs__button {
+  color: var(--text-primary);
   border-color: var(--border-primary);
   transition: all 0.2s ease-in;
 }

@@ -108,6 +108,10 @@
   .carousel-wrapper {
     justify-content: center;
   }
+
+  .modal-image {
+    display: none;
+  }
 }
 
 @media only screen and (width <= 500px) {
@@ -141,5 +145,9 @@
 
   .menu-tabs {
     gap: 7px;
+  }
+
+  .modal-backdrop {
+    padding: 19px;
   }
 }

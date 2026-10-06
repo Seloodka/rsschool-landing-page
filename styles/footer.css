@@ -51,9 +51,22 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
+  width: fit-content;
+}
+
+.footer-contacts__item_info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: fit-content;
 }
 
 .footer-contacts__link {
+  display: inline-flex;
+  gap: 8px;
+}
+
+.footer-contacts__info {
   display: inline-flex;
   gap: 8px;
 }

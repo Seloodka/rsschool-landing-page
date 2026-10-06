@@ -33,6 +33,8 @@
   transition: all 0.2s ease-in-out;
 }
 
-.gallery__item:hover img {
-  transform: scale(1);
+@media (hover: hover) {
+  .gallery__item:hover img {
+    transform: scale(1);
+  }
 }

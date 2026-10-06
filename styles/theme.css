@@ -1,0 +1,319 @@
+:root {
+  --border-primary-dark: rgba(102, 95, 85, 1);
+}
+
+[data-theme="light"] {
+  --text-primary: rgba(45, 45, 45, 1);
+  --text-inverse: rgba(225, 212, 201, 1);
+  --text-accent: rgba(176, 144, 122, 1);
+
+  --background-page: rgba(225, 212, 201, 1);
+  --background-container: rgba(102, 95, 85, 1);
+  --background-overlay: rgba(64, 63, 61, 0.8);
+
+  --border-primary: rgba(193, 182, 173, 1);
+  --border-inverse: rgba(102, 95, 85, 1);
+
+  --modal-background: rgba(225, 212, 201, 1);
+  --modal-control-active: rgba(102, 95, 85, 1);
+  --modal-close-button-background: rgba(102, 95, 85, 1);
+}
+
+[data-theme="dark"] {
+  --text-primary: rgba(225, 212, 201, 1);
+  --text-inverse: rgba(225, 212, 201, 1);
+  --text-accent: rgba(176, 144, 122, 1);
+
+  --background-page: rgba(41, 40, 38, 1);
+  --background-container: rgba(64, 63, 61, 1);
+  --background-overlay: rgba(41, 40, 38, 0.8);
+
+  --border-primary: rgba(102, 95, 85, 1);
+  --border-inverse: rgba(193, 182, 173, 1);
+
+  --modal-background: rgba(64, 63, 61, 1);
+  --modal-control-active: rgba(41, 40, 38, 1);
+  --modal-close-button-background: rgba(41, 40, 38, 1);
+}
+
+[data-theme="dark"] .header-logo__logo-container_light {
+  display: none;
+}
+
+[data-theme="light"] .header-logo__logo-container_dark {
+  display: none;
+}
+
+.page-wrapper {
+  background-color: var(--background-page);
+  transition: background-color 0.2s ease-in 0.2s;
+}
+
+.page {
+  color: var(--text-primary);
+  transition: color 0.2s ease-in;
+}
+
+.theme-switch {
+  border-color: var(--border-primary);
+}
+
+@media (hover: hover) {
+  .theme-switch__button_light:hover {
+    background-color: var(--background-container);
+
+    svg path {
+      fill: var(--text-primary);
+    }
+  }
+
+  .theme-switch__button_dark:hover {
+    background-color: var(--border-primary-dark);
+
+    svg path {
+      fill: var(--text-inverse);
+    }
+  }
+}
+
+.theme-switch__button_active {
+  pointer-events: none;
+  background-color: var(--text-accent);
+
+  svg path {
+    fill: var(--text-inverse);
+  }
+}
+
+.burger-menu__button {
+  border-color: var(--border-inverse);
+
+  svg path {
+    stroke: var(--text-primary);
+  }
+}
+
+.burger-menu__nav {
+  background-color: var(--background-page);
+}
+
+.burger-menu__menu-link {
+  svg path {
+    stroke: var(--text-primary);
+  }
+}
+
+.coffee-menu__link {
+  svg path {
+    stroke: var(--text-primary);
+  }
+}
+
+.hero-offer {
+  color: var(--text-inverse);
+}
+
+.hero-offer__button {
+  color: var(--text-primary);
+  background-color: var(--background-page);
+  transition: background-color 0.2s ease-in;
+
+  svg path {
+    stroke: var(--text-primary);
+  }
+}
+
+.text_accent {
+  color: var(--text-accent);
+}
+
+.carousel-wrapper__button {
+  border-color: var(--text-primary);
+  transition: all 0.2s ease-in;
+
+  svg path {
+    stroke: var(--text-primary);
+  }
+}
+
+@media (hover: hover) {
+  .carousel-wrapper__button:hover {
+    border-color: var(--background-container);
+    background-color: var(--background-container);
+
+    svg path {
+      stroke: var(--text-inverse);
+    }
+  }
+}
+
+@media (hover: none) {
+  .carousel-wrapper__button:active {
+    border-color: var(--background-container);
+    background-color: var(--background-container);
+
+    svg path {
+      stroke: var(--text-inverse);
+    }
+  }
+}
+
+.carousel-controls__control {
+  background-color: var(--border-primary);
+  transition: background-color 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.carousel-controls__control_active {
+  background-color: var(--border-inverse);
+}
+
+.app-offer__button {
+  border-color: var(--border-inverse);
+  transition: all 0.2s ease-in;
+
+  svg path {
+    fill: var(--text-primary);
+  }
+}
+
+.app-offer__button:hover {
+  color: var(--text-inverse);
+  border-color: var(--background-container);
+  background-color: var(--background-container);
+
+  svg path {
+    fill: var(--text-inverse);
+  }
+}
+
+.page-footer {
+  color: var(--text-inverse);
+  background-color: var(--background-container);
+}
+
+.socials__link {
+  border-color: var(--text-inverse);
+  transition: all 0.2s ease-in;
+
+  svg path {
+    stroke: var(--text-inverse);
+  }
+}
+
+.socials__link:hover {
+  background-color: var(--background-page);
+  border-color: var(--background-page);
+
+  svg path {
+    stroke: var(--text-primary);
+  }
+}
+
+.menu-tabs__button {
+  border-color: var(--border-primary);
+  transition: all 0.2s ease-in;
+}
+
+.menu-tabs__button > .menu-tabs__button-icon {
+  background-color: var(--border-primary);
+  transition: all 0.2s ease-in;
+}
+
+.menu-tabs__button_active,
+.menu-tabs__button:hover {
+  border-color: var(--background-container);
+  background-color: var(--background-container);
+  color: var(--text-inverse);
+}
+
+.menu-tabs__button_active > .menu-tabs__button-icon,
+.menu-tabs__button:hover > .menu-tabs__button-icon {
+  background-color: var(--background-page);
+}
+
+.menu-footer__load-more-button {
+  border-color: var(--text-primary);
+  transition: all 0.2s ease-in;
+
+  svg path {
+    stroke: var(--text-primary);
+  }
+}
+
+.menu-footer__load-more-button:hover {
+  border-color: var(--background-container);
+  background-color: var(--background-container);
+
+  svg path {
+    stroke: var(--text-inverse);
+  }
+}
+
+.card-wrapper {
+  border-color: var(--border-primary);
+}
+
+.modal-window {
+  background-color: var(--modal-background);
+}
+
+.modal-description__alert svg path {
+  stroke: var(--text-primary);
+}
+
+.modal-description__button {
+  border-color: var(--border-primary);
+  transition: all 0.2s ease-in;
+}
+
+.modal-description__button-icon {
+  background-color: var(--border-primary);
+  transition: all 0.2s ease-in;
+}
+
+.modal-description__button_active {
+  background-color: var(--modal-control-active);
+  border-color: var(--modal-control-active);
+
+  .modal-description__button-icon {
+    background-color: var(--modal-background);
+  }
+
+  span {
+    color: var(--text-inverse);
+  }
+}
+
+.modal-description__alert {
+  border-color: var(--border-primary);
+}
+
+.modal-description__close-button {
+  border-color: var(--border-primary);
+  transition: all 0.3s ease-in-out;
+}
+
+@media (hover: hover) {
+  .modal-description__button:hover {
+    background-color: var(--modal-control-active);
+    border-color: var(--modal-control-active);
+
+    .modal-description__button-icon {
+      background-color: var(--modal-background);
+    }
+
+    span {
+      color: var(--text-inverse);
+    }
+  }
+
+  .modal-description__close-button:hover {
+    background-color: var(--modal-close-button-background);
+    border-color: var(--modal-close-button-background);
+    color: var(--text-inverse);
+  }
+}
+
+.modal-description__button:active {
+  transform: scale(1.1);
+}

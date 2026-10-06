@@ -17,6 +17,7 @@ export const getScrollWidth = () => {
 };
 
 const openBurgerMenu = () => {
+  window.scrollTo(top);
   page.style.paddingRight = getScrollWidth() + "px";
 
   page.classList.add("prevent-scroll");

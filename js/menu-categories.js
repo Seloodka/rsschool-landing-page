@@ -60,8 +60,8 @@ const categoryControlHandler = (event) => {
   showCards(productsByCategory);
 };
 
-const cardContainer = document.querySelector(".card-container");
-const categoryControls = document.querySelectorAll(".menu-tabs__button");
+export const cardContainer = document.querySelector(".card-container");
+export const categoryControls = document.querySelectorAll(".menu-tabs__button");
 
 categoryControls.forEach((control) =>
   control.addEventListener("click", categoryControlHandler),

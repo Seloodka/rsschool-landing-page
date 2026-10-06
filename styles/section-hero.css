@@ -33,7 +33,7 @@
 .hero-offer__button {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   width: 200px;
   border-radius: 100px;
   padding: 20px 0;

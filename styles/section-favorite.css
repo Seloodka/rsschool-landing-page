@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.slider-wrapper {
+.carousel-wrapper {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -10,12 +10,12 @@
   width: 100%;
 }
 
-.slider-wrapper__button-container {
+.carousel-wrapper__button-container {
   max-width: 60px;
   max-height: 60px;
 }
 
-.slider-wrapper__button {
+.carousel-wrapper__button {
   padding: 18px;
   display: flex;
   justify-content: center;
@@ -24,26 +24,30 @@
   border-radius: 100px;
 }
 
-.slider__slide-list {
-  display: flex;
-  flex-flow: row nowrap;
+.carousel {
   max-width: 480px;
-  list-style: none;
   overflow: hidden;
 }
 
-.slider__slide {
+.carousel__slide-list {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+  transition: transform 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.carousel__slide {
   display: flex;
   flex-flow: column nowrap;
   gap: 20px;
   max-width: 100%;
 }
 
-.slider__slide img {
+.carousel__slide img {
   max-height: 480px;
 }
 
-.slider__slide-description {
+.carousel__slide-description {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -51,13 +55,13 @@
   text-align: center;
 }
 
-.slider-controls {
+.carousel-controls {
   display: flex;
   flex-flow: row nowrap;
   gap: 12px;
 }
 
-.slider-controls__control {
+.carousel-controls__control {
   width: 40px;
   height: 4px;
   border-radius: 100px;

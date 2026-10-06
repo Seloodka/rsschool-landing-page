@@ -9,9 +9,9 @@
 - Flex;
 - Grid;
 - Adaptive layout;
-- JS
-- DOM
-- DOM Events
+- JS;
+- DOM;
+- DOM Events;
 - Creating dynamic HTML from json data;
 - LocalStorage;
 
